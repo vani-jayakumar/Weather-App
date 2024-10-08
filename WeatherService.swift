@@ -8,7 +8,7 @@
 import Foundation
 
 class WeatherService {
-    private let apiKey = "0ec2c68b3e64b4a91c712fbab80535b2"
+    private let apiKey = "your_api_key"
     func fetchWeather(for city: String, callBack: @escaping (Weather?) -> Void) {
         let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&units=metric"
         guard let url = URL(string: urlString) else {
